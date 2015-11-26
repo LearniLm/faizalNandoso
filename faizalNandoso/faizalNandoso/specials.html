@@ -1,4 +1,4 @@
-<!--A Design by W3layouts 
+﻿<!--A Design by W3layouts 
 Author: W3layout
 Edited: Faizal Ansari
 -->
@@ -35,6 +35,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						});
 					});
 					</script>
+
+
+    <script src="js/elevator.js"></script>
+    <script src="js/elevator.min.js"></script>
+
+
 
 </head>
 <body>
@@ -199,7 +205,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="clearfix"> </div>
 		</div>	
 	</div>
-	
+
+
+    <div class="elevator-button">Back to Top</div>
+
+
+    <!--this implements the elevator back up-->
+    <script>
+        window.onload = function() {
+            var elevator = new Elevator({
+            element: document.querySelector('.elevator-button'),
+            mainAudio: 'audio/elevator.mp3',
+            endAudio: 'audio/ding.mp3'
+          });
+        }
+
+
+        elevator.elevate();
+    </script>	
 
 </body>
 </html>
