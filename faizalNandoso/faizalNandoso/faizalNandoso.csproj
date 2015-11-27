@@ -225,7 +225,9 @@
     <Content Include="js\move-top.js" />
     <Content Include="location.html" />
     <None Include="Properties\PublishProfiles\faizalNandoso - FTP %284%29.pubxml" />
+    <None Include="Properties\PublishProfiles\faizalNandoso - FTP %285%29.pubxml" />
     <None Include="Properties\PublishProfiles\faizalNandoso - Web Deploy %284%29.pubxml" />
+    <None Include="Properties\PublishProfiles\faizalNandoso - Web Deploy %285%29.pubxml" />
     <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.4.js" />
     <Content Include="Scripts\jquery-1.6.4.min.js" />
