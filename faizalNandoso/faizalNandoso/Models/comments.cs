@@ -13,7 +13,7 @@ namespace faizalNandoso.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
         public string Comment { get; set; }
-        public int UserName { get; set; }
+        public string UserName { get; set; }
 
         [JsonIgnore]
         public virtual ICollection<String> Comments { get; set; }

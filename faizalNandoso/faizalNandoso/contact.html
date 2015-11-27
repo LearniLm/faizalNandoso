@@ -100,20 +100,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class=" col-md-9 contact-left">
 
                     <form>
-                        <div>
+                        <div >
                             <span>Name</span>
-                            <input name="userName" type="text" class="textbox">
+                            <input id="toHide1" name="userName" type="text" class="textbox">
                         </div>
-                        <div>
+                        <div >
                             <span>E-Mail</span>
-                            <input name="userEmail" type="text" class="textbox">
+                            <input id="toHide2" name="userEmail" type="text" class="textbox">
                         </div>
-                        <div>
+                        <div >
                             <span>Subject</span>
-                            <textarea name="userMsg"> </textarea>
+                            <textarea id="toHide3"name="userMsg"> </textarea>
                         </div>
                         <div>
-                            <span><input type="submit" value="Submit"></span>
+                            <span>
+                                <button id="toChange" type="button" onclick='{
+                                    document.getElementById("toChange").innerHTML = "Submitted";
+                                    document.getElementById("toHide3").value = "";
+                                    document.getElementById("toHide1").value = "";
+                                    document.getElementById("toHide2").value = "";
+
+                                }'>Submit</button>
+                            </span>
                         </div>
                     </form>
                 </div>
